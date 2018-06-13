@@ -1,0 +1,57 @@
+<view class='container'>
+    <view class='banner'>
+        <image src='/images/111.jpeg'></image>
+    </view>
+    <view class='goods-detail'>
+        <view class='goods-name'><text>瑨健身新人周卡</text></view>
+        <view class='goods-info'>
+            <view class='goods-data'>2018年06月11日 21:14:30</view>
+            <view class='goods-grade'>1<view class="label"><text>积分</text></view></view>
+        </view>
+    </view>
+    <view class='evaluatePannel'>
+        <view class='starList'>
+            <view class='starName'><text>商品评分</text></view>
+            <view class='starBox'>
+                <view class='star active'>
+                    <image class="default-icon-image" src='/images/star_2.png'></image>
+                </view>
+                <view class='star active'>
+                    <image class="default-icon-image" src='/images/star_2.png'></image>
+                </view>
+                <view class='star active'>
+                    <image class="default-icon-image" src='/images/star_1.png'></image>
+                </view>
+                <view class='star'>
+                    <image class="default-icon-image" src='/images/star_1.png'></image>
+                </view>
+                <view class='star'>
+                    <image class="default-icon-image" src='/images/star_2.png'></image>
+                </view>
+            </view>
+        </view>
+        <view class="evaluateText">
+            <textarea name="evaluateText" cols="30" rows="5" placeholder="说点什么吧~" maxlength="100"></textarea>
+            <view class='text_tip'>最多输入100字</view>
+        </view>
+        <view class='upload'>
+            <block wx:for="{{addImageArray}}">
+                <block wx:if="{{item}}">
+                    <view class='uploadBtn' bindtap='uploadAvator'>
+                        <image class="default-icon-image" src='/images/plus.jpg'></image>
+                        <input class='uploadIcon' disabled></input>
+                        <view class='img_tip'>最多上传两张图片</view>
+                    </view>
+                </block>
+                <block wx:if="{{!item}}">
+                    <view class='uploadBtn'>
+                        <view class="del" bindtap='delImage'>-</view>
+                        <image src='{{src}}' style="width: 100%; height: 100%;"></image>
+                        <view class='img_tip' wx:if="{{item}}">最多上传两张图片</view>
+                    </view>
+                </block>
+            </block>
+        </view>
+    </view>
+    <view class='footer'><text>提交评价</text></view>
+</view>

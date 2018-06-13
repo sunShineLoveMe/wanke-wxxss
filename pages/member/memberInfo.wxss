@@ -1,0 +1,137 @@
+@import "/lib/weui.wxss";
+.panel {
+    margin-top: 20rpx;
+    background-color: #fff;
+    padding: 0 40rpx;
+}
+
+.member-item {
+    position: relative;
+    display: flex;
+    height: 80rpx;
+    align-items: center;
+    border-bottom: 1px solid #aaa;
+}
+
+.member-item .icon {
+    width: 47rpx;
+    height: 47rpx;
+    margin-right: 20rpx;
+}
+
+.member-item .icon image {
+    width: 100%;
+    height: 100%;
+}
+
+.member-item .option-name {
+    color: #999;
+    font-size: 12px;
+}
+
+.member-item .option {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.member-item .option .inputname > input{
+    border: 0;
+    text-align: right
+}
+
+.member-item .option .gender.active {
+    background: #f8836f;
+    border: 1px solid #f8836f;
+}
+
+.member-item .option .gender {
+    position: relative;
+    width: 100rpx;
+    border: 1px solid #66a4dd;
+    height: 60rpx;
+    border-radius: 5px;
+    background: #66a4dd
+}
+
+.member-item .option .gender .move.active {
+    right: 60rpx;
+}
+
+.member-item .option .gender .move{
+    display: inline-block;
+    width: 40rpx;
+    height: 60rpx;
+    background: #fff;
+    border-radius: 10rpx;
+    position: absolute;
+    right: 0;
+}
+
+.member-item .option .gender .text.active{
+    right: 0;
+}
+
+.member-item .option .gender .text{
+    display: inline-block;
+    width: 60rpx;
+    height: 60rpx;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+    line-height: 60rpx;
+    font-size: 12px;
+}
+
+.member-item .option .inputname .picker {
+    color: #999;
+    font-size: 12px;
+    text-align: right;
+}
+
+.member-item .option .userImg {
+    position: absolute;
+    right: 0;
+    top: 15rpx;
+    z-index: 99;
+    opacity: 0;
+}
+
+.member-item .option .upload-icon {
+    position: absolute;
+    width: 47rpx;
+    height: 36rpx;
+    right: 0;
+    top: 15rpx;
+}
+
+.footer {
+    width: 340rpx;
+    text-align: center;
+    height: 70rpx;
+    background: #fe8177;
+    line-height: 70rpx;
+    color: #fff;
+    font-size: 30rpx;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-radius: 10rpx;
+    margin: 0 auto;
+    margin-top: 200rpx;
+}
+
+.avatar-container {
+    position: relative;
+    text-align: center;
+}
+
+.avatar{
+    position: relative;
+    width: 100rpx;
+    height: 100rpx;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+}
+

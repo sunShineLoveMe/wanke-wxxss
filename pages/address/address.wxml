@@ -1,0 +1,71 @@
+<view class='container'>
+    <view class='addressList'>
+        <view class='addressBox'>
+            <view class='address'>
+                <view class='addressTop'>
+                    <view class='addressName'><text>仲崇臻</text></view>
+                    <view class='addressPhone'><text>15601731212</text></view>
+                </view>
+                <view class='addressInfo'>
+                    <view class='common province'>安徽省</view>
+                    <view class='common city'>蚌埠市</view>
+                    <view class='common area'>淮上区</view>
+                    <view class='common addressDetail'>券玩的草</view>
+                </view>
+            </view>
+            <view class='eddit'>
+                <view class='default'>
+                    <view class='default-icon active'>
+                        <image class="default-icon-image" src='/images/defaultIcon.png'></image>
+                    </view>
+                    <view class="default-label"><text>默认设置</text></view>
+                </view>
+                <view class='edditAndDel'>
+                    <view class='edditP'>
+                        <view class='icon'><image src='/images/edditIcon.png'></image></view>
+                        <view class='edditText' bindtap='editAddress'><text>编辑</text></view>
+                    </view>
+                    <view class='delete'>
+                        <view class='delIcon'><image src='/images/deleteIcon.png'></image></view>
+                        <view class='edditText' bindtap='delAddress'><text>删除</text></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class='addressBox'>
+            <view class='address'>
+                <view class='addressTop'>
+                    <view class='addressName'><text>仲崇臻</text></view>
+                    <view class='addressPhone'><text>15601731212</text></view>
+                </view>
+                <view class='addressInfo'>
+                    <view class='common province'>安徽省</view>
+                    <view class='common city'>蚌埠市</view>
+                    <view class='common area'>淮上区</view>
+                    <view class='common addressDetail'>券玩的草</view>
+                </view>
+            </view>
+            <view class='eddit'>
+                <view class='default'>
+                    <view class='default-icon active'>
+                         <image class="default-icon-image" src='/images/notDefaultIcon.png'></image>
+                    </view>
+                    <view class="default-label"><text>默认设置</text></view>
+                </view>
+                <view class='edditAndDel'>
+                    <view class='edditP'>
+                        <view class='icon'><image src='/images/edditIcon.png'></image></view>
+                        <view class='edditText' bindtap='editAddress'><text>编辑</text></view>
+                    </view>
+                    <view class='delete'>
+                        <view class='delIcon'><image src='/images/deleteIcon.png'></image></view>
+                        <view class='edditText' bindtap='delAddress'><text>删除</text></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class='footer'>
+        <view class='addAddressBtn' bindtap='addAddress'><text>增加收货地址</text></view>
+    </view>
+</view>

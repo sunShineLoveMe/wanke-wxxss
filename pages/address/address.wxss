@@ -1,0 +1,138 @@
+/* pages/address/address.wxss */
+page {
+    background-color: #f8f8f8;
+}
+.addressList {
+    background: #f8f8f8;
+    padding: 20rpx;
+    margin-bottom: 120rpx;
+}
+
+.addressBox {
+    background: #fff;
+    padding: 20rpx;
+    margin: 16rpx 0;
+    border-radius: 10px;
+    color: #666;
+    font-size: 12px;
+}
+
+.address {
+    overflow: hidden;
+    padding-bottom: 20rpx;
+    border-bottom: 1px solid #ddd;
+} 
+
+.addressTop {
+    margin: 10rpx 0;
+    overflow: hidden;
+} 
+
+.addressName {
+    float: left;
+}
+
+.addressPhone {
+    float: right;
+}
+
+.addressInfo {
+    margin: 10rpx 0;
+}
+
+.addressInfo .common {
+    display: inline-block;
+}
+
+.eddit {
+    overflow: hidden;
+    padding-top: 20rpx;
+}
+
+.default {
+    float: left;
+}
+
+.default-icon {
+    width: 36rpx;
+    height: 36rpx;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 20rpx;
+    border-radius: 50%;
+    background: url(../image/order/notDefaultIcon.png) no-repeat;
+    background-size: 100%;
+}
+
+.default-label {
+    display: inline-block;
+}
+
+.edditAndDel {
+    float: right;
+    overflow: hidden;
+}
+
+.edditP {
+    float: left;
+    margin-right: 40rpx;
+}
+
+.icon {
+    width: 30rpx;
+    height: 40rpx;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8rpx;
+}
+
+.icon image {
+    width: 100%;
+    height: 100%;
+}
+
+.edditText {
+    display: inline-block;
+}
+
+.delete {
+    float: right;
+}
+
+.delIcon {
+    display: inline-block;
+    width: 37rpx;
+    height: 40rpx;
+    vertical-align: middle;
+    margin-right: 8rpx;
+}
+
+.delIcon image {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 30rpx 0;
+    background: #f8f8f8;
+}
+
+.addAddressBtn {
+    text-align: center;
+    background: #f00;
+    height: 60prx;
+    line-height: 60rpx;
+    width: 400rpx;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.default-icon-image {
+    width: 100%;
+    height: 100%;
+}

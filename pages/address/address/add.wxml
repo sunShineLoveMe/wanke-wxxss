@@ -1,0 +1,44 @@
+<view class='container'>
+    <view class='header'>
+        <view class='title'><text>添加新地址</text></view>
+        <view class='saveBtn' bindtap='saveAddress'><text>保存</text></view>
+    </view>
+    <view class='addressinfo'>
+        <view class='common'>
+            <view class='commonTitle'><text>收货人</text></view>
+            <view class='commonText'>
+                <input type='text' placeholder='收货人姓名'></input>
+            </view>
+        </view>
+        <view class='common'>
+            <view class='commonTitle'><text>联系电话</text></view>
+            <view class='commonText'>
+                <input type='text' placeholder='收货人手机号'></input>
+            </view>
+        </view>
+        <view class='common'>
+            <view class='commonTitle'><text>所在地区</text></view>
+            <view class='commonText city'>
+                <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+                    <input class='picker' disabled value="{{region}}"></input>
+                    <view class='chooseCity'><text>请选择</text></view> 
+                    <view class='cityIcon'><image src='/images/next-icon.png'></image></view>
+                </picker>
+                
+            </view>
+        </view>
+        <view class='common'>
+            <textarea placeholder="详细地址" name="detail"></textarea>
+        </view>
+    </view>
+
+    <view class='default'>
+        <view class='defaultLabel'><text>设为默认地址</text></view>
+        <view class='defaultIcon' wx:if="{{condition}}" bindtap='changeDefault'>
+            <image class="default-icon-image" src='/images/notDefaultIcon.png'></image>
+        </view>
+        <view class='defaultIcon' wx:else bindtap='changeDefault'>
+            <image class="default-icon-image" src='/images/notDefaultIcon.png'></image>
+        </view>
+    </view>
+</view>

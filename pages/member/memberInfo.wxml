@@ -1,0 +1,88 @@
+<view class='panel'>
+    <form>
+        <view class='avatar-container'><image src="{{src}}" class="avatar"></image></view>
+        <view class='member-item'>
+            <view class='icon'><image src='/images/userimg-icon.png'></image></view>
+            <view class='option-name'>头像</view>
+            
+            <view class='option'>         
+                <input name="memberPhoto" class='userImg' bindtap='uploadAvator' disabled/>
+                <image class='upload-icon' src='/images/upload-icon.png' bindtap='uploadAvator'></image>
+            </view>
+        </view>
+        <view class='member-item'>
+            <view class='icon'>
+                <image src='/images/username-icon.png'></image>
+            </view>
+            <view class='option'>
+                <view class='option-name'><text>姓名</text></view>
+                <view class='inputname'>
+                    <input type="text" maxlength='8' placeholder='请填写用户名' placeholder-style='font-size: 12px;'></input>
+                </view>
+            </view>
+        </view>
+        <view class='member-item'>
+            <view class='icon'>
+                <image src='/images/usermobile-icon.png'></image>
+            </view>
+            <view class='option'>
+                <view class='option-name'><text>手机</text></view>
+                <view class='inputname'>
+                    <input type="number" placeholder='请填写手机号' placeholder-style='font-size: 12px;'></input>
+                </view>
+            </view>
+        </view>
+        <view class='member-item'>
+            <view class='icon'>
+                <image src='/images/userbirthday-icon.png'></image>
+            </view>
+            <view class='option'>
+                <view class='option-name'><text>生日</text></view>
+                <view class='inputname'>
+                    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">                     
+                        <input class='picker' value="{{date}}" disabled/>
+                    </picker>
+                </view>
+            </view>
+        </view>
+        <view class='member-item'>
+            <view class='icon'>
+                <image src='/images/usergender-icon.png'></image>
+            </view>
+            <view class='option'>
+                <view class='option-name'><text>性别</text></view>
+                <view class='inputname gender {{active? "active": ""}}' bindtap='changeGender'>
+                   <view class='move {{active? "active": ""}}'></view>
+                   <view class='text {{active? "active": ""}}'>{{genderName}}</view>
+                </view>
+            </view>
+        </view>
+        <view class='member-item'>
+            <view class='icon'>
+                <image src='/images/useraddress-icon.png'></image>
+            </view>
+            <view class='option'>
+                <view class='option-name'><text>省市</text></view>
+                <view class='inputname'>
+                    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+                <input class='picker' placeholder='请选择省市' placeholder-style='font-size: 12px;' disabled></input>
+                    </picker>
+                </view>
+            </view>
+        </view>
+        <view class='member-item'>
+            <view class='icon'>
+                <image src='/images/useraddress-icon.png'></image>
+            </view>
+            <view class='option'>
+                <view class='option-name'><text>家庭住址</text></view>
+                <view class='inputname'>
+                    <input type="number" placeholder='请填写家庭住址' placeholder-style='font-size: 12px;'></input>
+                </view>
+            </view>
+        </view>
+    </form>
+    <view class='footer'>
+        <text>保存</text>
+    </view>
+</view>
